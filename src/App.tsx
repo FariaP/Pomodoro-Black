@@ -1,19 +1,21 @@
 import './style/theme.css'
 import './style/global.css'
-import { Heading } from './components/Heading'
-import { TimerIcon } from 'lucide-react';
+import { Container } from './components/Container/index';
+import { Heading } from './components/Heading/index';
+import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
 
 export function App() {
     return (
         <>
+            <Container>
+                <Logo />
+            </ Container >
 
-            <Heading>
-                <button><TimerIcon /></button>
-            </Heading>
-            <form>
-                <label id="email">Email</label>
-                <input type="text" placeholder="Digite seu email" id="email" />
-            </form>
+            <Container>
+                <Menu />
+            </ Container >
         </>
+
     );
 }

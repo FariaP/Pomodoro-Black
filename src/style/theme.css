@@ -35,4 +35,6 @@
 
     --disabled: #555f7d;
     --text-disabled: #aab3cc;
+
+    --boxshadow: 0 1px 30px rgba(77, 231, 182, 0.475);
 }
