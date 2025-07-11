@@ -1,0 +1,6 @@
+.timeZen {
+    color: var(--text-default);
+    font-size: clamp(80px, 25vw, 160px);
+    text-align: center;
+    font-weight: bold;
+}
