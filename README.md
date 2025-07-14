@@ -6,7 +6,7 @@ Tecnologias Utilizadas
 - **TypeScript**
 - **Reacts.js**
 - **@Vite**
-- **@JavaScript**
+- **JavaScript**
 
 Funcionalidades
 - Design moderno e responsivo.
