@@ -1,69 +1,32 @@
-# React + TypeScript + Vite
+# Pomodoro - ZenTime
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ZenTime é um pomodoro onde resolvi desenvolver para praticar meus conhecimentos e também solucionar um problemas que acontece na minha casa quando minha prima vai fazer atividades escolares. A ideia do projeto é pra que ela marque todas etaps que ela estiver fazendo suas atividades e que no final de cada etapa de estudo tera um breve tempo pra descanso ou distração, fazendo com que nao fique cansativo suas atividades.
 
-Currently, two official plugins are available:
+Tecnologias Utilizadas
+- **TypeScript**
+- **Reacts.js**
+- **@Vite**
+- **@JavaScript**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Funcionalidades
+- Design moderno e responsivo.
+- Seção de apresentação das etapas.
+- Botões interativos e responsivos.
+- Seção de histórico de ciclos.
+- Seção de criação de ciclos.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Como Executar o Projeto
+1. Clone o repositório:
+   ```sh
+   git@github.com:FariaP/Pomodoro-Black.git
+   ```
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Melhorias Futuras
+- Implementação de um banco de dados.
+- Melhorias no design e animações.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Contato
+Para mais informações, entre em contato pelo e-mail: **fariasilvapedrohenrique@gmail.com**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
