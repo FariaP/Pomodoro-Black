@@ -5,6 +5,10 @@ import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { TimeZen } from './components/TimeZen';
 import { InputForm } from './components/InputForm';
+import { Cycles } from './components/Cycles';
+import { ButtonForm } from './components/ButtonForm';
+import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
+import { Footer } from './components/Footer';
 
 export function App() {
     return (
@@ -20,7 +24,7 @@ export function App() {
                 <TimeZen />
             </ Container >
             <Container>
-                <form action="" className='form'>
+                <form className='form'>
                     <div className='formRow'>
                         <InputForm type='text' id='input' labelText='Task:' placeholder='Digite algo' />
                     </div>
@@ -28,11 +32,14 @@ export function App() {
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                     <div className='formRow'>
-                        <p>Ciclos:</p>
-                        <p>0 0 0 0 0 0 0 0 0 </p>
+                        <Cycles />
                     </div>
                     <div className='formRow'>
-                        <button type='submit'>icon</button>
+                        <ButtonForm icon={<PlayCircleIcon />} color='green' />
+                        {/* <ButtonForm icon={<StopCircleIcon />} color='red' /> */}
+                    </div>
+                    <div className='formRow'>
+                        <Footer />
                     </div>
                 </form>
             </ Container >
