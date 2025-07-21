@@ -1,4 +1,5 @@
 .footer {
+
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -9,7 +10,7 @@
 
 .footer a {
     font-size: clamp(14px, 25%, 1rem);
-    color: var(--text-over-error);
+    color: var(--text-default);
     text-decoration: none;
 }
 
