@@ -25,7 +25,7 @@ export function Menu() {
     }
 
     useEffect(() => {
-        console.log('cliquei')
+
         document.documentElement.setAttribute('data-theme', theme)
         localStorage.setItem('theme', theme)
     }, [theme]);
