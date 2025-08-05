@@ -8,7 +8,7 @@ export type TaskStateModels = {
     currentyCircle: number;
     config: {
         workTime: number;
-        shortBreakeTime: number;
+        shortBreakTime: number;
         longBreakTime: number;
     }
 }
